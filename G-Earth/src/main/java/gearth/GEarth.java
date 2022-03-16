@@ -151,7 +151,7 @@ public class GEarth extends Application {
     public static String getArgument(String... arg) {
         for (int i = 0; i < args.length - 1; i++) {
             for (String str : arg) {
-                if (args[i].toLowerCase().equals(str.toLowerCase())) {
+                if (args[i].equalsIgnoreCase(str)) {
                     return args[i+1];
                 }
             }
